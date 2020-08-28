@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAME</title>
     <link rel="shortcut icon" href="#" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,7 +19,7 @@
                 <div class="header__inner">
                     <ul class="header__menu menu">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">
+                            <a href="#" class="menu__link menu__link--active">
                                 О психотехнике
                             </a>
                         </li>
@@ -27,8 +28,8 @@
                                 схема работы
                             </a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
+                        <li class="menu__item menu__item--center">
+                            <a href="#" class="menu__link menu__link--center">
                                 <img class="menu__logo" src="img/logo.svg" alt="logo">
                             </a>
                         </li>
@@ -52,14 +53,521 @@
             </div>
         </header>
         <!--  //SECTION MAIN-->
-        <main class="site-content"></main>
+        <main class="site-content">
+            <!-- //SECTION PROMO  -->
+            <section class="promo">
+                <div class="container">
+                    <div class="promo__inner">
+                        <!--    //ANCHOR PROMO CONTENT -->
+                        <div class="promo__content">
+                            <h1 class="promo__title">
+                                СПЕЦИАЛИСТЫ ПО ЛИКВИДАЦИИ ДЕСТРУКТИВНЫХ ЭМОЦИЙ
+                            </h1>
+                            <h2 class="promo__subtitle">
+                                Коррекция восприятия и устранение негативных переживаний
+                            </h2>
+                            <button class="promo__btn button btn">
+                                записаться на
+                                бесплатную консультацию
+                            </button>
+                        </div>
+                        <!--    //ANCHOR PROMO IMAGE -->
+                        <div class="promo__image">
+                            <img class="promo__img" src="img/promo__image.jpg" alt="promo__image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION  SPECIAL -->
+            <section class="special">
+                <div class="container">
+                    <h2 class="special__title page-title">
+                        Специализация
+                    </h2>
+                    <div class="special__inner">
+                        <!--  //NOTE RELATIONS ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/relations.svg" alt="relations">
+                                <h2 class="special__descr">
+                                    отношения
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Поможем наладить отношения между партнерами, в семье, с близкими, на работе
+                            </p>
+                        </article>
+
+                        <!--  //NOTE UNCERTAINTY ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/uncertainty.svg" alt="uncertainty">
+                                <h2 class="special__descr">
+                                    Неуверенность
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Устраняем причины низкой самооценки, неуверенности в себе
+                            </p>
+                        </article>
+
+                        <!--  //NOTE DEPRESION ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/depresions.svg" alt="depresions">
+                                <h2 class="special__descr">
+                                    Депрессия
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Ликвидируем депрессию, апатию, страх, тревоги, стресс, переживание одиночества
+                            </p>
+                        </article>
+
+                        <!--  //NOTE SELF_REAL ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/self_real.svg" alt="self_real">
+                                <h2 class="special__descr">
+                                    самореализация
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Устраняем психологические преграды в достижении личных целей
+                            </p>
+                        </article>
+
+                        <!--  //NOTE PSYCHOSOMATIC ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/psychosomatic.svg" alt="psychosomatic">
+                                <h2 class="special__descr">
+                                    самореализация
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Работаем с психосоматическими заболеваниями
+                            </p>
+                        </article>
+
+                        <!--  //NOTE dependence ITEM -->
+                        <article class="special__item">
+                            <div class="special__pic">
+                                <img class="special__img" src="img/special/dependence.svg" alt="dependence">
+                                <h2 class="special__descr">
+                                    зависимости
+                                </h2>
+                            </div>
+                            <p class="special__text">
+                                Избавляем от психологических причин зависимостей, компульсивного переедания
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION ABOUT -->
+            <section class="about">
+                <div class="container">
+                    <h2 class="about__title page-title">
+                        О психотехнике ЛДОУ
+                    </h2>
+                    <div class="about__inner">
+                        <div class="about__item">
+                            <p class="about__text">
+                                Ликвидация Деструктивных Оценочных Убеждений - это психотехника, основанная Владимиром Крутиковым. Данный метод базируется на устранении убеждений человека (относительно себя, других, окружающей действительности), которые вызывают психологические и эмоциональные
+                                страдания, психосоматическую боль в теле.
+                            </p>
+                        </div>
+
+                        <div class="about__item">
+                            <p class="about__text">
+                                Психотехника ЛДОУ позволяет избавиться от депрессии, апатии, горя утраты, печали, грусти, ненависти к себе, раздражения, страха, ужаса, неуверенности в себе, беспокойства, волнения, отчаяния, паники, гнева и ярости, тоски, зависти и чувства вины, разочарования,
+                                досады и стыда, сожаления, жалости к себе, презрения и других негативных эмоций.
+                            </p>
+                        </div>
+
+                        <div class="about__item">
+                            <p class="about__text">
+                                Обнаружение деструктивного убеждения моментально устраняет негативный мысленный и поведенческий паттерн. На месте старой реакции останется осознанность, гибкость мышления и здравомыслие.
+                            </p>
+                        </div>
+
+                        <div class="about__item">
+                            <p class="about__text">
+                                Полученный эффект не слабеет со временем, а мысли о проблеме и страдания, основанные на них, исчезают безвозвратно. Мы изменяем не только ваше отношение к болезненной ситуации, а корректируем само восприятие.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION SCHEME -->
+            <section class="scheme">
+                <div class="container">
+                    <h2 class="scheme__title page-title">
+                        Схема работы
+                    </h2>
+                    <div class="scheme__inner">
+
+                        <div class="scheme__item">
+                            <div class="scheme__pic">
+                                <span class="scheme__descr">
+                                    ЗАЯВКА
+                                </span>
+                                <img class="scheme__img" src="img/scheme/request.svg" alt="request">
+                            </div>
+                            <p class="scheme__text">
+                                Вы оставляете заявку на сайте или связываетесь с нами через Контакты (Telegram, What’s App, Instagram)
+                            </p>
+                        </div>
+
+                        <div class="scheme__item">
+                            <div class="scheme__pic">
+                                <span class="scheme__descr">
+                                    ЗАпись
+                                </span>
+                                <img class="scheme__img" src="img/scheme/note.svg" alt="note">
+                            </div>
+                            <p class="scheme__text">
+                                Мы свяжемся с Вами, договоримся о дате/времени для online знакомства и первичной бесплатной консультации
+                            </p>
+                        </div>
+
+                        <div class="scheme__item">
+                            <div class="scheme__pic">
+                                <span class="scheme__descr">
+                                    Знакомство
+                                </span>
+                                <img class="scheme__img" src="img/scheme/meet.svg" alt="meet">
+                            </div>
+                            <p class="scheme__text">
+                                Вы опишите свою проблему, а мы объясним Вам как и каких результатов мы сможем добиться
+                            </p>
+                        </div>
+
+                        <div class="scheme__item">
+                            <div class="scheme__pic">
+                                <span class="scheme__descr">
+                                    сеанс
+                                </span>
+                                <img class="scheme__img" src="img/scheme/session.svg" alt="session">
+                            </div>
+                            <p class="scheme__text">
+                                На online встрече мы найдем причины Ваших переживаний и ликвидируем негативные эмоции по отношению к ситуации
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION FEEDBACK -->
+            <section class="feedback">
+                <div class="container">
+                    <h2 class="feedback__title page-title">
+                        Отзывы клиентов
+                    </h2>
+                    <!-- //NOTE SLIDER -->
+                    <div class="feedback__slider">
+                        <div class="feedback__inner">
+                            <!-- //ANCHOR SLIDER ITEM -->
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/1.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Ольга
+                                                Кушнарева
+                                            </span>
+                                            <span class="slider__age">
+                                                49 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //ANCHOR SLIDER ITEM -->
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/2.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Дмитрий
+                                                Ефимов
+                                            </span>
+                                            <span class="slider__age">
+                                                37 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //ANCHOR SLIDER ITEM -->
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/2.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Дмитрий
+                                                Ефимов
+                                            </span>
+                                            <span class="slider__age">
+                                                37 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/1.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Ольга
+                                                Кушнарева
+                                            </span>
+                                            <span class="slider__age">
+                                                49 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //ANCHOR SLIDER ITEM -->
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/2.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Дмитрий
+                                                Ефимов
+                                            </span>
+                                            <span class="slider__age">
+                                                37 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //ANCHOR SLIDER ITEM -->
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <div class="slider__header">
+                                        <img class="slider__ava" src="img/feedback(slider)/2.jpg" alt="ava">
+                                        <div class="slider__name-info">
+                                            <span class="slider__name">
+                                                Дмитрий
+                                                Ефимов
+                                            </span>
+                                            <span class="slider__age">
+                                                37 лет
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__text">
+                                        Консультации с Женей проходили на одном дыхании, тактично, конструктивно мы разбирали эти блоки, снимали ограничения в мышлении. Хочу отметить, что самому в себе «копаться» сложно, ведь даже в те моменты, когда мы пытаемся в чем-то разобраться в жизни,
+                                        мозг начинает отчаянно сопротивляться и подсовывает нам всевозможные хитрые уловки, отговорки. И только под чутким руководством специалиста, можно и нужно работать с блоками, ограничивающими убеждениями. Рекомендую
+                                        и вам пройти этот путь, так что вперед – действуйте. И помните, что всё зависит только от вас. А Женя вам в этом поможет!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION PRICE -->
+            <section class="price">
+                <div class="container">
+                    <h2 class="price__title page-title">
+                        Стоимость
+                    </h2>
+                    <div class="price__inner">
+                        <div class="price__dot-box">
+                            <p class="price__dot-text">
+                                История клиента - его сокровище. Мы гарантируем Вам полную конфиденциальность.
+                            </p>
+                        </div>
+
+                        <div class="price__item-box">
+                            <img class="price__item-image" src="img/price/time.png" alt="time">
+                            <img class="price__item-image price__item-image--center" src="img/price/ticket.png" alt="ticket">
+                            <img class="price__item-image" src="img/price/all.png" alt="all">
+                        </div>
+                        <div class="price__dot-box">
+                            <p class="price__dot-text">
+                                Мы работаем через аудио/видео связь в Telegram, What's App, Skype.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION FORM -->
+            <section class="consult">
+                <div class="container">
+                    <h2 class="consult__title page-title">
+                        Запись на бесплатную консультацию
+                    </h2>
+                    <div class="consult__inner">
+                        <div class="consult__content">
+                            <span class="consult__content-title">
+                                На консультации:
+                            </span>
+                            <ul class="consult__list">
+                                <li class="consult__item">
+                                    Мы с Вами познакомимся
+                                </li>
+                                <li class="consult__item">
+                                    Вы расскажете о том, что Вас беспокоит
+                                </li>
+                                <li class="consult__item">
+                                    Мы расскажем как и каких результатов мы сможем добиться
+                                </li>
+                                <li class="consult__item">
+                                    Мы ответим на вопросы, касательно самого процесса работы
+                                </li>
+                                <li class="consult__item">
+                                    Договоримся о дате и времени следующей онлайн встречи для начала работы
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="consult__form form">
+                            <input class="form__input" type="text" required placeholder="ваше имя">
+                            <input class="form__input" type="tel" required placeholder="номер телефона">
+                            <textarea class="form__textarea" name="form-text" placeholder="коротко, что беспокоит (необязательно)">
+                            </textarea>
+                            <span class=" form__descr ">
+                                Я соглашаюсь на обработку моих персональных данных
+                            </span>
+                            <span class="form__descr ">
+                                Я подтверждаю, что мне больше 18 лет
+                            </span>
+                            <button class="form__btn button btn">
+                                записаться на консультацию
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- //SECTION CONTACTS -->
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="contacts__title page-title">
+                        Контакты
+                    </h2>
+                    <div class="contacts__inner">
+                        <!-- //ANCHOR AVA-BOX  GIRL-->
+                        <div class="contact__ava ava-box">
+                            <img class="ava-box__img" src="img/contacts/girl.png" alt="girlPhoto">
+                            <div class="ava-box__name">
+                                евгения наконечная
+                            </div>
+                        </div>
+                        <!-- //ANCHOR AVA-BOX  BOY-->
+                        <div class="contact__ava ava-box">
+                            <img class="ava-box__img" src="img/contacts/boy.png" alt="boyPhoto">
+                            <div class="ava-box__name">
+                                дмитрий кушнарев
+                            </div>
+                        </div>
+                        <!--  //ANCHOR CONTENT-BOX -->
+                        <div class="contacts__content-box content-box">
+                            <!-- //NOTE SOCIAL__LINKS -->
+                            <div class="content-box__social social">
+                                <a class="social__item" href="https://teleg.run/jayne_n">
+                                    <img class="social__img" src="img/contacts/teleg.png" alt="telegram">
+                                    <span class="social__name">
+                                        @jayne_n
+                                    </span>
+                                </a>
+                                <a class="social__item" href="tel:79500220744">
+                                    <img class="social__img" src="img/contacts/phone.svg" alt="phone">
+                                    <span class="social__link">
+                                       +7 950 022 07 44
+                                    </span>
+                                </a>
+                                <a class="social__item" href="https://www.instagram.com/Jjayne_n/">
+                                    <img class="social__img" src="img/contacts/phone.svg" alt="phone">
+                                    <span class="social__link">
+                                      @Jjayne_n
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="contacts__text">
+                                Мы не оцениваем и не осуждаем вас. Наша задача - помочь вам изменить себя и свою жизнь к лучшему.
+                            </div>
+                            <!-- //NOTE SOCIAL__LINKS -->
+                            <div class="content-box__social">
+                                <a class="social__item" href="https://teleg.run/kushnarevdn">
+                                    <img class="social__img" src="img/contacts/teleg.png" alt="telegram">
+                                    <span class="social__name">
+                                       @kushnarevdn
+                                    </span>
+                                </a>
+                                <a class="social__item" href="tel:84941347585">
+                                    <img class="social__img" src="img/contacts/phone.svg" alt="phone">
+                                    <span class="social__link">
+                                       +84 94 134 75 85
+                                    </span>
+                                </a>
+                                <a class="social__item" href="https://www.instagram.com/kushnarevdn/">
+                                    <img class="social__img" src="img/contacts/phone.svg" alt="phone">
+                                    <span class="social__link">
+                                     @kushnarevdn
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <span class="contacts__copy">
+                    Коррекция восприятия, 2020
+                </span>
+            </section>
+        </main>
 
     </div>
-    <!--  //SECTION FOOTER-->
-    <footer class="footer"></footer>
 
-    <script src="js/libs.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/libs.min.js "></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>

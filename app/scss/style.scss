@@ -1,0 +1,733 @@
+@import "global.scss";
+@import "fonts.scss";
+@import "vars.scss";
+@import "button.scss";
+// -----------------------------------------------------------------------------------------------------------
+//
+//                                                    START CODE
+//
+// -----------------------------------------------------------------------------------------------------------
+.header {
+    background-color: $main;
+    box-shadow: 0 4em 4em white inset;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 77px;
+    &__item {
+        &--center {
+            align-self: flex-start;
+        }
+    }
+    &__link {
+        position: relative;
+        padding: 15px 0;
+        font-weight: 600;
+        font-size: 16px;
+        color: $dark;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: rgba($color: black, $alpha: 1);
+            transition: all 0.3s;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+        &--center {
+            &:hover:after {
+                width: 0;
+            }
+        }
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                               //SECTION PROMO                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.promo {
+    padding: 82px 0 28px;
+    background-color: $bg_grey;
+    box-shadow: 0 4em 4em white inset;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        padding: 30px 70px 61px 0;
+        font-weight: bold;
+        font-size: 49px;
+        line-height: 115.9%;
+        color: $dark;
+    }
+    &__subtitle {
+        padding: 0 70px 56px 0;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: $dark;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                              //SECTION SPECIAL                             */
+
+
+/* -------------------------------------------------------------------------- */
+
+.special {
+    padding: 70px 0;
+    background-color: $bg_light-grey;
+    box-shadow: 0 4em 4em white inset;
+    &__title {
+        padding-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        flex-basis: calc(33.333% - 55px);
+        padding-bottom: 55px;
+    }
+    &__pic {
+        display: flex;
+        align-items: center;
+    }
+    &__img,
+    &__descr,
+    &__text {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        color: $dark;
+    }
+    &__img {
+        display: inline-block;
+    }
+    &__descr {
+        display: inline-block;
+        padding: 25px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 120.5%;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 30px 5px 10px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow-y: hidden;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                               //SECTION ABOUT                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.about {
+    padding: 70px 0 24px;
+    background-image: url(../img/about/about__bg.png);
+    background-position: 50% 88%;
+    background-repeat: no-repeat;
+    background-color: $bg_grey;
+    box-shadow: 0 4em 4em white inset;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        counter-reset: section;
+    }
+    &__item {
+        flex-basis: calc(50% - 100px);
+        position: relative;
+        background-color: $main;
+        margin-top: 75px;
+        border: 3px solid $dark;
+        padding: 30px 20px 20px;
+        border-radius: 24px;
+        box-shadow: (0px 4px 15px 4px rgba(0, 0, 0, 0.25));
+        &:before {
+            counter-increment: section;
+            content: counter(section);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 34px;
+            text-transform: uppercase;
+            color: $dark;
+            top: -30px;
+            left: 0;
+            width: 52px;
+            height: 52px;
+            background-color: $white;
+            border: 3px solid $dark;
+            border-radius: 100%;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $dark;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                              //SECTION SHCEME                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.scheme {
+    padding: 52px 0 58px;
+    background-color: $bg_light-grey;
+    box-shadow: 0 4em 4em white inset;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        counter-reset: section;
+    }
+    &__item {
+        flex-basis: calc(50% - 87px);
+        padding: 47px 40px;
+        margin-top: 75px;
+        background-color: $white;
+        border: 3px solid $dark;
+        border-radius: 24px;
+    }
+    &__pic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__descr {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 120.5%;
+        text-transform: uppercase;
+        color: $dark;
+        &:before {
+            counter-increment: section;
+            content: counter(section) ".";
+            position: absolute;
+            left: 5px;
+        }
+    }
+    &__img {
+        max-width: 115px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $dark;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow-y: hidden;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                             //SECTION FEEDBACK                             */
+
+
+/* -------------------------------------------------------------------------- */
+
+.feedback {
+    background-color: $bg_grey;
+    padding: 60px 0;
+    box-shadow: 0 4em 4em white inset;
+    &__title {
+        padding-bottom: 60px;
+    }
+}
+
+
+/* //NOTE SLIDER */
+
+.slider {
+    width: 90%;
+    height: auto;
+    &__wrapper {
+        display: flex !important;
+        justify-content: center;
+    }
+    &__item {
+        max-width: 305px;
+        width: 100%;
+        min-height: 475px;
+        background: linear-gradient( 0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #c4c4c4;
+        border: 3px solid $dark;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        background-color: $main;
+        padding: 12px 16px;
+        border-bottom: 3px solid $dark;
+    }
+    &__name-info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__ava {
+        margin-right: 20px;
+    }
+    &__name {
+        white-space: pre-line;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 103.5%;
+        text-transform: uppercase;
+        color: $dark;
+    }
+    &__text {
+        padding: 17px 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark;
+    }
+}
+
+
+/* //NOTE SLICK SLIDER  */
+
+.leftArrow.slick-arrow,
+.rightArrow.slick-arrow {
+    top: 24%;
+    position: absolute;
+    z-index: 2;
+}
+
+.leftArrow.slick-arrow {
+    left: -8%;
+}
+
+.rightArrow.slick-arrow {
+    right: -8%;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    list-style-type: none;
+    li {
+        display: block;
+        width: 12px;
+        height: 12px;
+        button {
+            display: block;
+            width: 12px;
+            height: 16px;
+            font-size: 0;
+            border: 3px solid $dark;
+            border-radius: 100%;
+        }
+    }
+    li+li {
+        margin-left: 10px;
+    }
+    .slick-active button {
+        background-color: $dark;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                               //SECTION PRICE                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.price {
+    padding: 60px 0;
+    background-color: $bg-light-grey;
+    box-shadow: 0 4em 4em white inset;
+    &__title {
+        padding-bottom: 45px;
+    }
+    &__dot-box {
+        position: absolute;
+        display: inline-block;
+        max-width: 378px;
+        padding: 20px;
+        border: 3px dotted $dark;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $dark;
+        &:first-child {
+            right: calc(30% - 100px);
+        }
+        &:last-child {
+            transform: translateY(-100px);
+        }
+    }
+    &__item-box {
+        position: relative;
+        min-height: 475px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            z-index: 1;
+        }
+        &:before {
+            background-image: url(../img/price/arrowRight.svg);
+            width: 147px;
+            height: 250px;
+            left: 689px;
+        }
+        &::after {
+            background-image: url(../img/price/arrowLeft.svg);
+            width: 210px;
+            height: 190px;
+            left: 199px;
+        }
+    }
+    &__item-image {
+        z-index: 3;
+        &:nth-child(1) {
+            align-self: flex-start;
+        }
+        &:nth-child(3) {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                             //SECTION CONSSULT                             */
+
+
+/* -------------------------------------------------------------------------- */
+
+.consult {
+    padding: 44px 0 54px;
+    background: $bg_grey;
+    box-shadow: 0 4em 4em white inset;
+    &__title {
+        padding-bottom: 50px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        flex-basis: calc(50% - 50px);
+    }
+    &__form {
+        flex-basis: calc(50% - 50px);
+    }
+    &__content-title {
+        position: relative;
+        padding: 21px 20px;
+        display: inline-block;
+        background: #ffffff;
+        border: 3px solid $dark;
+        border-radius: 16px 16px 16px 0;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 100px;
+            height: 400px;
+            background-color: $dark;
+            left: -3px;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        counter-reset: section;
+        padding: 0 0 0 30px;
+    }
+    &__item {
+        position: relative;
+        padding: 20px 45px;
+        font-size: 18px;
+        line-height: 22px;
+        &:before {
+            counter-increment: section;
+            content: counter(section);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 25%;
+            font-weight: 500;
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            left: 0;
+            color: $dark;
+            border: 3px solid $dark;
+            border-radius: 100%;
+            background-color: $main;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: $dark;
+            left: 0;
+            left: -29px;
+            top: 48%;
+            z-index: 1;
+        }
+    }
+}
+
+//NOTE FORM
+.form {
+    &__input,
+    &__textarea {
+        display: block;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        border: 3px dashed $dark;
+        padding: 13px 18px;
+        &::placeholder {
+            color: rgba(40, 45, 38, 0.5);
+        }
+    }
+    &__input {
+        margin-bottom: 25px;
+        color: blueviolet;
+    }
+    &__textarea {
+        height: 140px;
+        resize: none;
+        color: rgba(40, 45, 38, 0.5);
+    }
+    &__descr {
+        display: block;
+        font-size: 15px;
+        line-height: 125.5%;
+        color: $dark;
+        padding: 12px 0 0;
+    }
+    &__btn {
+        margin: 60px 0 0 auto;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                             //SECTION CONTACTS                             */
+
+
+/* -------------------------------------------------------------------------- */
+
+.contacts {
+    background: $bg_light-grey;
+    padding: 44px 0 54px;
+    box-shadow: 0 4em 4em white inset;
+    &__title {
+        padding-bottom: 40px;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        height: 468px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__ava {}
+    &__content-box {}
+    &__text {
+        position: relative;
+        flex-basis: calc(33.33% - 50px);
+        border: 3px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 25px 16px;
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 22px;
+        color: $dark;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            right: 30px;
+            background-image: url(../img/contacts/quotes.svg);
+            width: 46px;
+            height: 39px;
+        }
+    }
+    &__copy {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 35px;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 114%;
+        color: $dark;
+        &:before {
+            content: "©";
+            font-size: 16px;
+            color: $dark;
+        }
+    }
+}
+
+//NOTE AVA_BOX
+.ava-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 385px;
+    width: 100%;
+    height: 171px;
+    background: $bg_light-grey;
+    border: 3px dashed $dark;
+    z-index: 2;
+    &__img {
+        display: block;
+        max-width: 141px;
+        max-height: 141px;
+    }
+    &__name {
+        display: inline-block;
+        font-family: Montserrat;
+        font-weight: 600;
+        max-width: 169px;
+        font-size: 22px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: $dark;
+    }
+}
+
+//NOTE CONTENT_BOX
+.content-box {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 38px;
+    bottom: 5px;
+    z-index: 1;
+    max-width: 100%;
+    height: 313px;
+    width: 100%;
+    border: 3px dashed $dark;
+}
+
+//NOTE SOCIAL
+.social {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(33.333% - 50px);
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        &+& {
+            margin-top: 15px;
+        }
+        &:hover .social__name,
+        &:hover .social__link {
+            color: rgba($color: #58a5bd, $alpha: 1);
+        }
+        &:hover .social__name:after,
+        &:hover .social__link:after {
+            width: 100%;
+        }
+    }
+    &__img {
+        margin-right: 35px;
+    }
+    &__name,
+    &__link {
+        position: relative;
+        font-weight: 600;
+        padding-bottom: 7px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $dark;
+        transition: all 0.3s;
+        line-height: 20px;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: rgba($color: #89ecf3, $alpha: 1);
+            transition: all 0.3s;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------------------------------------
+//
+//                                                    END CODE
+//
+// -----------------------------------------------------------------------------------------------------------
+@import "media.scss";
